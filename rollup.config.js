@@ -1,12 +1,8 @@
-import typescript from '@rollup/plugin-typescript'
-
 export default {
-	input: './src/mod.ts',
+	input: './cache/mod.js',
 	output: {
-		format: 'esm',
+		format: 'es',
 		file: 'dst/mod.js',
 	},
-	plugins: [
-		typescript(),
-	],
+	plugins: [],
 }

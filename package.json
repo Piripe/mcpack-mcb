@@ -10,7 +10,7 @@
 		"./dst/**"
 	],
 	"scripts": {
-		"build": "rollup -c",
+		"build": "rimraf cache&&ts-to-jsdoc -o cache src&&node fix-cache-imports.js&&rollup -c",
 		"watch": "rollup -w -c"
 	},
 	"repository": {
@@ -24,5 +24,9 @@
 		"@rollup/plugin-typescript": "^11.0.0",
 		"tslib": "^2.5.0",
 		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"rollup": "^4.12.0",
+		"ts-to-jsdoc": "^1.5.1"
 	}
 }
