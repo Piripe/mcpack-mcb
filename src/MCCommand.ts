@@ -82,6 +82,7 @@ export class MCFunction {
             );
             return MCCommand.pure(`function ${this.namespacedID}`);
         }
+		if (!this.namespacedID) this.namespacedID = NamespacedID.randomUUID();
         return MCCommand.contextual(context => {
             context.mcfunctions.push(this);
             return `function ${this.namespacedID}`;

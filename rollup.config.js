@@ -3,7 +3,8 @@ export default {
 	output: {
 		format: 'cjs',
 		file: 'dst/mcpack.js',
-		outro: 'module.exports = Object.assign({}, module.exports, exports)'
+		outro: 'module.exports = Object.assign({}, module.exports, exports)',
+		intro: 'const crypto = require("crypto");'
 	},
 	plugins: [],
 }
