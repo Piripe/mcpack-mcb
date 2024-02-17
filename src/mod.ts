@@ -15,4 +15,5 @@ export * from "./Tag.ts";
 export * from "./Tellraw.ts";
 export * from "./TextComponent.ts";
 export * from "./MCCommand.ts";
+export * from "./mcbContext.ts";
 // export * from "./utils.ts";

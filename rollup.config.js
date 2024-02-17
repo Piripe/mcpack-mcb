@@ -1,8 +1,9 @@
 export default {
 	input: './cache/mod.js',
 	output: {
-		format: 'es',
-		file: 'dst/mod.js',
+		format: 'cjs',
+		file: 'dst/mcpack.js',
+		outro: 'module.exports = Object.assign({}, module.exports, exports)'
 	},
 	plugins: [],
 }
